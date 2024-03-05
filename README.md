@@ -8,7 +8,25 @@ docker-compose ps
 docker exec -it {NAME} bash
 ```
 
-##　ディレクトリ説明
+## 動作確認
+Create
+```
+curl -X POST -H "Content-Type: application/json" -d '{"regex":{"title":"{ここに作成するタイトル}"}}' http://localhost:3000/api/v1/regexes
+```
+Read
+```
+curl -X GET http://localhost:3000/api/v1/regexes
+```
+Update
+```
+curl -X PUT -H "Content-Type: application/json" -d '{"regex":{"title":"{ここに更新するタイトル}"}}' http://localhost:3000/api/v1/regexes/{ここにidを指定}
+```
+Delete
+```
+curl -X DELETE http://localhost:3000/api/v1/regexes/{ここにidを指定}
+```
+
+## ディレクトリ説明
 
 ```
 app: アプリケーションのメインのコードが含まれる場所。
