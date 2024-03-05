@@ -1,3 +1,6 @@
+## 参考にしたやーつ
+https://zenn.dev/chiku_dev/articles/29ae4b8afa6fd4#rails-api-%E3%81%AE%E8%A8%AD%E5%AE%9A
+
 ## 起動方法
 
 ```
